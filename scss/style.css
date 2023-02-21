@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  color: #2f2f2f;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #2f2f2f;
+  padding: 5vh 5vw;
+  z-index: 2;
+}
+header h1 a {
+  font: bold 30px/50px "Roboto";
+  color: #2f2f2f;
+  letter-spacing: 5px;
+}
+header #gnb {
+  display: flex;
+}
+header #gnb li {
+  margin: 0 30px;
+}
+header #gnb li a {
+  font: 12px/1 "Roboto";
+  letter-spacing: 3px;
+}
+header .sns {
+  display: flex;
+}
+header .sns li {
+  margin: 0 10px;
+}
+header .sns li a {
+  font-size: 16px;
+  color: #2f2f2f;
+}
+header .btn-menu {
+  display: none;
+  color: #2f2f2f;
+  font-size: 30px;
+}
+header .snb .sub-menu {
+  display: none;
+  position: absolute;
+  padding: 10px 25px;
+  background-color: rgba(255, 207, 145, 0.9);
+  border: 1px solid #403e3b;
+  border-radius: 10px;
+  right: 5vw;
+  text-align: right;
+  opacity: 1;
+  transition: 0.4s;
+}
+header .snb .sub-menu.hide {
+  opacity: 0;
+}
+header .snb .sub-menu li {
+  padding: 10px 0;
+  font: 14px/1 "Roboto";
+  color: #2f2f2f;
+}
+header .snb .sub-menu li a i {
+  margin-left: 8px;
+}
+
+figure {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+figure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+figure .text {
+  position: absolute;
+  right: 6vw;
+  top: 44%;
+  transform: translateY(-50%);
+  text-align: right;
+}
+figure .text p {
+  font: normal 8vw/1 "Roboto";
+  color: #403e3b;
+}
+figure .text ul {
+  position: absolute;
+  right: 0.1vw;
+  display: flex;
+  margin-top: 30px;
+}
+figure .text ul li {
+  margin: 0 30px;
+}
+figure .text ul li i {
+  font-size: 20px;
+  color: #2f2f2f;
+  margin-right: 10px;
+}
+figure .text ul li strong {
+  font: 14px/1 "Roboto";
+  color: #403e3b;
+  letter-spacing: 1px;
+}
+
+footer {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  font: 12px/1 "sans-serif";
+  letter-spacing: 5px;
+  color: rgb(255, 251, 245);
+  padding: 3vh 0;
+}
+
+@media screen and (max-width: 968px) {
+  header #gnb {
+    display: none;
+  }
+  header .sns {
+    display: none;
+  }
+  header .snb .btn-menu {
+    display: block;
+  }
+  header .snb .sub-menu {
+    display: block;
+  }
+  figure .text p {
+    font-size: 15vw;
+  }
+  figure .text ul li {
+    margin: 0 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
